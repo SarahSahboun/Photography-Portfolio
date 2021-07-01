@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> <!--meta tag to define metadata about an html document, charset attribute specifies the character encoding, UTF-8 character set covers almost all of the characters and symbols in the world!-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--this allows web authors to choose what version of internet explorer the page should be rendered as-->
+        <title>Contact</title>
+        <meta name="viewport" content="width=device-width, intial-scale=1.0"> <!--this gives the browser instructions on how to control the page's dimensions and scaling-->
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/15b8d8027a.js" crossorigin="anonymous"></script> <!--kit's website-->
+        <!--display.js-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+        <script src="display.js"></script>
+    </head>
+    <body>
+
+        <!--Header-->
+        <header class="header">
+            <div class="nav-section"> 
+                <div class="brand-and-navBtn">
+                    <span class="brand-name">
+                        Sarah's Photography Portfolio
+                    </span>
+                    <span class="navBtn flex">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </div>
+                <!--navigation menu-->
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+                <span class="search-icon">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+                <div class="container about">
+                    <div class="about-content">
+                        <div class="about-img flex">
+                            <img src="IMAGE" alt="Portrait"> <!--edit both width and height-->
+                        </div>
+                        <h2>Y/N</h2>
+                        <h3>description</h3>
+                        <blockquote>
+                            "You can look at a picture for a week and never
+                            think of it again. You can also look at a picture 
+                            for a second and think of it all your life."
+                            <span>-Joan Miro</span>
+                        </blockquote>
+                    </div>
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="link to your fb"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="link to your twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="link to your instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="link to your pinterest"><i class="fab fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+        </header>
+        <!--end of header-->
+
+        <!--Main-->
+
+        <section class="section-five">
+            <div class="container">
+                <div class="contact-top">
+                    <h3>CONTACT ME</h3>
+                    <p>ANYTHING</p>
+                </div>
+
+                <div class="contact-middle">
+                    <div>
+                        <span class="contact-icon">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        <span>Address</span>
+                        <p>your address</p>
+                    </div>
+
+                    <div>
+                        <span class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        <span>Contact Number</span>
+                        <p>your number</p>
+                    </div>
+
+                    <div>
+                        <span class="contact-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </span>
+                        <span>Email</span>
+                        <p>your email</p>
+                    </div>
+
+                    <div>
+                        <span class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </span>
+                        <span>website</span>
+                        <p><a href="index.html" style="color: white;">your website</a></p>
+                    </div>
+
+                </div>
+
+                <div class="contact-bottom">
+                    <form class="form" id="submit_form">                             <!--name="contact-form" method="post" action="contact.php">--> <!--onSubmit="return confirm('Your email was sent!');"-->
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Your Name">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Your Email">
+                        <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+                        <textarea rows="9" name="message" id="message" class="form-control" placeholder="Message"></textarea>
+                        <input type="button" name="submit" id="submit" class="btn" value="Submit">  
+                        <span id="error_message"></span>  
+                        <span id="success_message"></span> 
+                        <!--<input type="submit" class="btn" value="Send Message">-->
+                    </form>
+
+                    <!--MAP-->
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107353.29609047221!2d12.900972344348059!3d32.77129296581489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8e8df71c33819%3A0x64900f67fa60ecd!2sJanzur!5e0!3m2!1sen!2sly!4v1622501662575!5m2!1sen!2sly" width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--end of main-->
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container container">
+                <div>
+                    <h2>your name</h2>
+                    <P>
+                        description
+                    </P>
+                </div>
+            </div>
+            <p>&copy;Copyright SARAHDOE</p>
+        </footer>
+        <!--end of footer-->
+
+        <script src="script.js"> </script>
+    </body>
+</html>

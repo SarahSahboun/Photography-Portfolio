@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> <!--meta tag to define metadata about an html document, charset attribute specifies the character encoding, UTF-8 character set covers almost all of the characters and symbols in the world!-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--this allows web authors to choose what version of internet explorer the page should be rendered as-->
+        <title>Blog</title>
+        <meta name="viewport" content="width=device-width, intial-scale=1.0"> <!--this gives the browser instructions on how to control the page's dimensions and scaling-->
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/15b8d8027a.js" crossorigin="anonymous"></script> <!--kit's website-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+        <script src="displayemail.js"></script>
+    </head>
+    <body>
+
+        <!--Header-->
+        <header class="header">
+            <div class="nav-section">
+                <div class="brand-and-navBtn">
+                    <span class="brand-name">
+                        website name
+                    </span>
+                    <span class="navBtn flex">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </div>
+                <!--navigation menu-->
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html" class="active">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <span class="search-icon">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+                <div class="container about">
+                    <div class="about-content">
+                        <div class="about-img flex">
+                            <img src="IMAGE" alt="Portrait"> <!--edit both width and height-->
+                        </div>
+                        <h2>Y/N</h2>
+                        <h3>DESCRIPTION</h3>
+                        <blockquote>
+                            "You can look at a picture for a week and never
+                            think of it again. You can also look at a picture 
+                            for a second and think of it all your life."
+                            <span>-Joan Miro</span>
+                        </blockquote>
+                    </div>
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="LINK TO YOUR FB"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="LINK TO YOUR TWITTER"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="LINK TO YOUR INSTAGRAM"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="LINK TO YOUR PINTEREST"><i class="fab fa-pinterest"></i></a></li> <!--i stopped at 5:23-->
+                        </ul>
+                    </div>
+                </div>
+        </header>
+        <!--end of header-->
+
+        <!--Main-->
+        <section class = "section-four">
+            <div class = "container">
+                <div class = "blogs">
+                    <div class = "blog-wrapper-lg">
+                        <!-- single blog post -->
+                        <div class = "blog">
+                            <img src="IMAGE 1" style="width:680px;height:680px;" >
+                            <div class = "blog-content">
+                                <span class = "badge">Photography</span>
+                                <span class = "misc-info">
+                                    Published: 1 Week Ago / EDIT ME!
+                                </span>
+                                <h3 class = "blog-title">
+                                    Landscape / EDIT ME!
+                                </h3>
+                                <p class = "blog-text">
+                                    more pictures to be added in other posts! stay tuned. / EDIT ME!
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end of single post -->
+
+                        <!-- single blog post -->
+                        <div class = "blog">
+                            <img src= "IMAGE 2" style="width:680px;height:680px;" >
+                            <div class = "blog-content">
+                                <span class = "badge">Photography</span>
+                                <span class = "misc-info">
+                                    Published: 1 Week Ago / EDIT ME!
+                                </span>
+                                <h3 class = "blog-title">
+                                    Simple artwork / EDIT ME!
+                                </h3>
+                                <p class = "blog-text">
+                                    more posts to be added soon! stay tuned. / EDIT ME!
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end of single post -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end of main-->
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container container">
+                <div>
+                    <h2>ANYTHING</h2>
+                    <P>
+                       DESCRIPTION
+                    </P>
+                </div>
+                <div>
+                    <h3>Free subscription!</h3>
+                    <p>Subscribe to get daily updates
+                    </p>
+                    <div class="subs">
+                        <i class="fas fa-envelope"></i>
+                        <form id="submit_form">                                         <!--method="post" action="database.php">-->
+                            <input type="email" id="email" name="email" placeholder="Email Address" class="form-control">
+                            <button type="button" name="submit" id="submit">SUBSCRIBE</button> <!--type used to be submit-->
+                            <!--<input type="button" name="submit" id="submit" class="button" value="Subscribe" />-->
+                            <span style="color: white;" id="error_message" class="text-danger"></span>  
+                            <span style="color: white;" id="success_message" class="text-success"></span>
+                            </form>
+                    </div>
+                </div>
+            </div>
+            <p>&copy;Copyright SARAHDOE</p>
+        </footer>
+        <!--end of footer-->
+
+        <script src="script.js"> </script>
+    </body>
+</html>
